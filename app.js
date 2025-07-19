@@ -83,7 +83,8 @@ function gameStart() {
 function levelUp() {
   userSeq = []; // Clearing  user sequence for the new level.
   level++;
-  heading.innerText = `Level ${level}
+  heading.innerText = `Note :- Click the boxes in the same order from level 1 to current level.      
+                        Current Level ${level}
                         Current Score - ${level - 1}`;
 
   let randomIndex = Math.floor(Math.random() * allDivIds.length);
