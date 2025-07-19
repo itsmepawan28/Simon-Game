@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brain Game</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1 id="h1">Test Your Memory</h1>
 
-    <h2 id="h2">
-      Enter any number greater than 1 and press play to start the game.
-    </h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brain Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <input
-      type="number"
-      placeholder="enter any number to create box"
-      id="inputBox"
-    />
+<body>
+  <h1 id="h1">Test Your Memory</h1>
+
+  <h2 id="h2">
+    Read the instruction to play the game.
+  </h2>
+
+
+  <!-- Instructions for players -->
+
+  <div id="instructions">
+    <h3 id="h3">🔍 How to Play:</h3>
+    <ol style="text-align: left;">
+      <li>Enter any number between <strong>2 and 8</strong> in the input box.</li>
+      <li>Click the <strong>Play</strong> button to start.</li>
+      <li>The game will flash a sequence of colored boxes. Remember the order.</li>
+      <li>Click the boxes in the same order to advance levels.</li>
+      <li>One wrong move ends the game and shows your score.</li>
+      <li>Click <strong>Play</strong> to try again!</li>
+    </ol>
+    <p><strong>🧠 How far can your memory go?</strong></p>
+  </div>
+
+  <div class="box-btn">
+    <input type="number" placeholder="Enter any number to start" id="inputBox" />
 
     <button id="play">Play</button>
+  </div>
 
-    <div id="parentDiv"></div>
+  <div id="parentDiv"></div>
 
-    <audio src="/assets/game.wav" id="game"></audio>
-    <audio src="/assets/user.wav" id="user"></audio>
-    <audio src="/assets/error.mp3" id="error"></audio>
-    <script src="app.js"></script>
-  </body>
+  <audio src="/assets/game.wav" id="game"></audio>
+  <audio src="/assets/user.wav" id="user"></audio>
+  <audio src="/assets/error.mp3" id="error"></audio>
+  <script src="app.js"></script>
+</body>
+
 </html>

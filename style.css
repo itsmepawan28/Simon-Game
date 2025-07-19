@@ -1,6 +1,4 @@
-*{
-    text-align: center;
-}
+
 
 body{
     background-image: url("/assets/bg.jpg") ;
@@ -10,12 +8,39 @@ body{
     color: #f99b45;
     /* horizontal shadow vertical shadow blur effect and color */
     text-shadow: 2px 2px 15px rgb(7, 101, 225);  
+    text-align: center;
 }
 
 #h2{
     color: rgb(5, 236, 213);
     /* horizontal shadow vertical shadow blur effect and color */
     text-shadow: 2px 2px 5px rgb(96, 61, 234);
+    text-align: center;
+}
+
+#instructions {
+  max-width: 600px;
+  margin: 20px auto;
+  color: white;
+  font-size: 1.1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  display: block;
+  line-height: 25px;
+}
+
+#h3{
+    color: blueviolet;
+    text-shadow: 2px 2px 8px rgb(96, 61, 234);
+    text-align: center;
+    font-size: larger;
+}
+
+
+
+.box-btn{
+    text-align: center;
 }
 
 #inputBox{
@@ -27,8 +52,21 @@ body{
     background-color: gainsboro;
     border: 5px solid goldenrod;
     border-radius: 25px;
+    text-align: center;
 
 }
+
+/* To remove the increment (▲) and decrement (▼) arrows (also called spinners) from a number input field */
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* ------------------------------ */
 
 #inputBox:hover{
     
